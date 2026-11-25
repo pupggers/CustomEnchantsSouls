@@ -1,11 +1,11 @@
 name: CustomEnchantsSouls
 main: pup\souls\Main
-version: 1.0.0
+version: 1.0.1
 api: 5.0.0
 author: pup
 description: Shared soul bank for CustomEnchant packs
 depend:
-  - CustomEnchant
+  - CustomEnchants
 
 permissions:
   souls.command:
