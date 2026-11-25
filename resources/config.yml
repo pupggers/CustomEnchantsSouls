@@ -1,0 +1,11 @@
+# Messages go through CustomEnchant's PlaceholderAPI: colors, {player}, {server_online}, and {souls} (the viewer's
+# souls) or {souls:<online player>}. Set a message to "" to turn it off.
+messages:
+  souls_no_permission: "{red}You do not have permission to do that."
+  souls_usage: "{red}Usage: /souls [player] | /souls <give|take> <player> <amount>"
+  souls_admin_usage: "{red}Usage: /souls <give|take> <online player> <amount>"
+  souls_balance: "{aqua}{target}{gray} has {white}{amount}{gray} souls."
+  souls_updated: "{green}{target} now has {amount} souls."
+  souls_target_not_enough: "{red}{target} only has {amount} souls."
+  souls_not_enough: "{red}Not enough souls ({amount} needed)"
+  souls_gained: "{aqua}+{amount} souls {gray}({souls})"

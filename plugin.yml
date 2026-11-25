@@ -1,0 +1,16 @@
+name: CustomEnchantsSouls
+main: pup\souls\Main
+version: 1.0.0
+api: 5.0.0
+author: pup
+description: Shared soul bank for CustomEnchant packs
+depend:
+  - CustomEnchant
+
+permissions:
+  souls.command:
+    default: true
+    description: See your soul balance
+  souls.command.admin:
+    default: op
+    description: Give or take souls
