@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build PHAR
+    name: Build PHAR with DevTools v4.1.1
     uses: AxolotlBucketLabs/DevTools/.github/workflows/build-plugin.yml@c2eb715205a9dcb485a4ecabd17512f32f24d5d7 # v4.1.1
     permissions:
       contents: read
@@ -27,7 +27,7 @@ jobs:
       phpstan: "off"
 
   release:
-    name: Publish Release
+    name: Publish GitHub Release
     needs: build
     runs-on: ubuntu-24.04
 
@@ -36,6 +36,11 @@ jobs:
       actions: read
 
     steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
       - name: Check whether version is already released
         id: check
         env:
